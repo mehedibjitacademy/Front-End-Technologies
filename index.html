@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignUp - Md. Mehedi Hassan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+      color: #333333;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100%;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-flow: column nowrap;
+      border-radius: 5px;
+      width: 580px;
+      height: fit-content;
+      margin: 100px auto;
+      padding: 20px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .heading {
+      width: 100%;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px 20px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid gainsboro;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-size: 16px;
+      padding-left: 5px;
+    }
+
+    input {
+      width: 100%;
+      border: 0;
+      outline: none;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      padding: 20px 15px;
+      margin: 0 0 20px 0;
+    }
+
+    .namefields {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .namefields div {
+      width: 48%;
+    }
+
+    button {
+      height: 50px;
+      text-align: center;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      background-color: #2cbc63;
+      color: white;
+    }
+
+    @media only screen and (max-width: 768px) {
+      body {
+        background-color: white;
+      }
+
+      .container {
+        width: 95%;
+        border: 0;
+        box-shadow: none;
+      }
+
+      .heading {
+        border-bottom: 0;
+      }
+
+      .namefields {
+        display: block;
+      }
+
+      .namefields div {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">Sign Up</div>
+    <form action="#">
+      <div class="namefields">
+        <div><label for="firstname">First Name </label>
+          <input class="inp" type="text" placeholder="First Name" name="firstname" />
+        </div>
+        <div><label for="lastname">Last Name </label>
+          <input class="inp" type="text" placeholder="Last Name" name="lastname" />
+        </div>
+      </div>
+      <label for="email">Email Address</label>
+      <input class="inp" type="email" placeholder="enter your email" name="email" />
+      <label for="newpassword">New Password </label>
+      <input class="inp" type="password" placeholder="enter password" name="newpassword" />
+      <label for="confirmpassword">Confirm Password </label>
+      <input class="inp" type="password" placeholder="confirm password" name="confirmpassword" />
+      <button type="button">Sign Up</button>
+    </form>
+  </div>
+</body>
+
+</html>
